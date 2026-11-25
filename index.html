@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hair Craft Salon, Golaghat</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Cormorant+Garamond:wght@500;600;700&family=Hind:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#1a1714;--soft:#6b6252;--bg:#faf6ee;--paper:#fffdf9;--brass:#a8803f;--brass2:#c9a661;--gold:#e8cf97;--line:#e8dcc4;--err:#c0392b;--wa:#1f9d55}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:Hind,system-ui,sans-serif;font-style:normal;
+  background:linear-gradient(180deg,#fffdf9,var(--bg) 40%,#f3ecdd);
+  background-attachment:fixed;color:var(--ink);line-height:1.65;font-size:17px;
+}
+.wrap{max-width:560px;margin:0 auto;padding:0 20px}
+img{display:block;max-width:100%}
+
+/* ---------- Hero ---------- */
+header{
+  text-align:center;padding:64px 20px 56px;
+  background:
+    linear-gradient(180deg,rgba(10,8,5,.55) 0%,rgba(10,8,5,.68) 60%,rgba(10,8,5,.82) 100%),
+    url("IMG-20261124-WA0036.jpg") center 30% / cover no-repeat;
+  border-bottom:2px solid var(--brass2);
+  box-shadow:0 14px 30px -22px rgba(120,90,30,.6);
+}
+.logo{
+  width:130px;height:130px;margin:0 auto 22px;border-radius:50%;
+  object-fit:cover;background:#000;
+  box-shadow:0 0 0 5px rgba(255,253,249,.9),0 0 0 6.5px var(--brass2),0 16px 30px -12px rgba(0,0,0,.7);
+}
+.brand{font-family:Cinzel,Georgia,serif;font-weight:700;font-size:1.9rem;letter-spacing:.22em;line-height:1.2;color:#fffaf0;text-shadow:0 2px 12px rgba(0,0,0,.6)}
+.brand small{display:block;font-weight:500;font-size:.85rem;letter-spacing:.7em;color:var(--brass2);margin-top:6px;padding-left:.7em}
+.tag{font-family:"Cormorant Garamond",Georgia,serif;font-size:1.2rem;font-weight:600;color:#ecdcb6;margin-top:16px;letter-spacing:.06em;text-shadow:0 2px 10px rgba(0,0,0,.6)}
+.meta{font-size:.95rem;color:#e6dcc6;margin-top:6px;text-shadow:0 2px 10px rgba(0,0,0,.6)}
+.cta{
+  display:inline-block;margin-top:26px;padding:13px 32px;border-radius:999px;text-decoration:none;
+  font-family:Cinzel,Georgia,serif;font-weight:700;letter-spacing:.14em;font-size:.9rem;
+  background:linear-gradient(135deg,var(--gold),var(--brass2));color:var(--ink);border:1px solid var(--brass2);
+  box-shadow:0 10px 22px -10px rgba(0,0,0,.7);transition:.2s;
+}
+.cta:hover{background:transparent;color:var(--gold)}
+
+/* ---------- Sections ---------- */
+section{padding:34px 0 6px}
+h2{font-family:"Cormorant Garamond",Georgia,serif;font-weight:700;font-size:2rem;letter-spacing:.04em;margin-bottom:14px;display:flex;align-items:center;gap:12px;color:var(--ink)}
+h2::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,var(--brass),transparent)}
+.card{
+  background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:24px 20px;
+  box-shadow:0 14px 34px -22px rgba(120,90,30,.45)
+}
+
+/* ---------- Premium Booking Form ---------- */
+form.card{
+  position:relative;overflow:hidden;
+  padding:32px 22px 26px;border-radius:22px;border:1px solid rgba(201,166,97,.55);color:#f3ead7;
+  background:
+    radial-gradient(circle at 100% 0%,rgba(201,166,97,.22),transparent 45%),
+    radial-gradient(circle at 0% 100%,rgba(201,166,97,.12),transparent 45%),
+    linear-gradient(160deg,#1d1914,#0b0a08);
+  box-shadow:0 30px 60px -28px rgba(0,0,0,.85),0 0 0 1px rgba(0,0,0,.4),inset 0 1px 0 rgba(255,255,255,.07);
+}
+form.card::before{
+  content:"";position:absolute;left:22px;right:22px;top:0;height:2px;
+  background:linear-gradient(90deg,transparent,var(--brass2),transparent)
+}
+.f-eyebrow{font-family:Cinzel,Georgia,serif;font-size:.7rem;letter-spacing:.45em;color:var(--brass2);text-align:center}
+.f-title{font-family:"Cormorant Garamond",Georgia,serif;font-weight:700;font-size:1.9rem;text-align:center;color:#fff6e0;line-height:1.2;margin:6px 0 4px}
+.f-sub{font-size:.92rem;color:#b9ad95;text-align:center;margin-bottom:26px}
+.f-orn{display:flex;align-items:center;justify-content:center;gap:10px;margin:0 0 24px;color:var(--brass2);font-size:.7rem}
+.f-orn::before,.f-orn::after{content:"";width:60px;height:1px;background:linear-gradient(90deg,transparent,var(--brass2))}
+.f-orn::after{transform:scaleX(-1)}
+
+label,legend{display:block;font-family:Cinzel,Georgia,serif;font-weight:600;font-size:.74rem;letter-spacing:.22em;text-transform:uppercase;margin-bottom:9px;padding:0;color:var(--brass2)}
+.inp{
+  display:flex;align-items:center;gap:10px;padding:0 15px;border-radius:12px;
+  background:rgba(255,255,255,.05);border:1px solid rgba(201,166,97,.3);
+  transition:border-color .2s,box-shadow .2s,background .2s;
+}
+.inp:focus-within{border-color:var(--brass2);background:rgba(255,255,255,.08);box-shadow:0 0 0 3px rgba(201,166,97,.22)}
+.inp svg{width:19px;height:19px;flex:none;stroke:var(--brass2);fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.inp .cc{font-weight:600;color:var(--gold);padding-right:10px;border-right:1px solid rgba(201,166,97,.35);letter-spacing:.04em}
+input[type=text],input[type=tel]{
+  flex:1;min-width:0;font:inherit;font-size:1.05rem;padding:15px 0;border:0;background:transparent;color:#fff6e0;outline:none;
+}
+input::placeholder{color:#7d7463}
+input:-webkit-autofill{-webkit-text-fill-color:#fff6e0;transition:background-color 9999s}
+button:focus-visible,a:focus-visible,.g input:focus-visible+span,.chips input:focus-visible+span{outline:3px solid var(--brass2);outline-offset:2px}
+.field{margin-bottom:22px}
+fieldset{border:0;padding:0}
+.g{display:flex;gap:10px}
+.g label{flex:1;margin:0;position:relative}
+.g input{position:absolute;opacity:0}
+.g span{
+  display:block;text-align:center;padding:13px 6px;border:1px solid rgba(201,166,97,.3);border-radius:12px;cursor:pointer;
+  background:rgba(255,255,255,.05);color:#e6dcc6;
+  font-family:Hind,sans-serif;font-size:1rem;font-weight:500;letter-spacing:.04em;text-transform:none;transition:.2s
+}
+.g span:hover{border-color:var(--brass2)}
+.g input:checked+span{
+  background:linear-gradient(135deg,var(--gold),var(--brass2) 60%,#b58d45);color:#1a1409;border-color:transparent;font-weight:700;
+  box-shadow:0 10px 22px -10px rgba(201,166,97,.8)
+}
+
+/* ---------- Time slots + AM/PM slider ---------- */
+.tslot{display:flex;gap:14px;align-items:stretch}
+.chips{flex:1;min-width:0;display:grid;grid-template-columns:repeat(3,1fr);gap:8px;align-content:start}
+.chips label{margin:0;position:relative}
+.chips input{position:absolute;opacity:0}
+.chips span{
+  display:block;text-align:center;padding:11px 4px;border:1px solid rgba(201,166,97,.3);border-radius:10px;cursor:pointer;
+  background:rgba(255,255,255,.05);color:#e6dcc6;
+  font-family:Hind,sans-serif;font-size:.98rem;font-weight:500;letter-spacing:.02em;text-transform:none;transition:.2s
+}
+.chips span:hover{border-color:var(--brass2)}
+.chips input:checked+span{
+  background:linear-gradient(135deg,var(--gold),var(--brass2) 60%,#b58d45);color:#1a1409;border-color:transparent;font-weight:700;
+  box-shadow:0 10px 22px -10px rgba(201,166,97,.8)
+}
+.ampm-wrap{display:flex;flex-direction:column;align-items:center;gap:6px;flex:none;width:64px}
+.ampm-wrap small{font-family:Cinzel,Georgia,serif;font-size:.62rem;letter-spacing:.18em;color:var(--brass2)}
+.ampm{
+  position:relative;width:58px;height:112px;padding:0;border-radius:30px;cursor:pointer;touch-action:none;
+  border:1px solid rgba(201,166,97,.45);
+  background:linear-gradient(180deg,rgba(201,166,97,.22),rgba(255,255,255,.05) 50%,rgba(201,166,97,.08));
+  box-shadow:inset 0 2px 8px rgba(0,0,0,.6);
+}
+.ampm .lbl{position:absolute;left:0;right:0;text-align:center;font-family:Cinzel,Georgia,serif;font-weight:700;font-size:.78rem;letter-spacing:.1em;color:#8f8672;pointer-events:none}
+.ampm .l-am{top:14px}
+.ampm .l-pm{bottom:14px}
+.ampm .knob{
+  position:absolute;left:4px;right:4px;top:4px;height:50px;border-radius:26px;
+  display:flex;align-items:center;justify-content:center;
+  font-family:Cinzel,Georgia,serif;font-weight:700;font-size:.95rem;letter-spacing:.06em;color:#1a1409;
+  background:linear-gradient(135deg,var(--gold),var(--brass2) 60%,#b58d45);
+  box-shadow:0 8px 16px -6px rgba(0,0,0,.8),inset 0 1px 0 rgba(255,255,255,.5);
+  transition:transform .25s cubic-bezier(.4,.1,.2,1);
+}
+.ampm[aria-checked="true"] .knob{transform:translateY(52px)}
+.ampm[aria-checked="false"] .l-am,.ampm[aria-checked="true"] .l-pm{opacity:0}
+.t-note{font-size:.82rem;color:#a89d86;margin-top:8px}
+
+.err{color:#ff9d8f;font-size:.88rem;min-height:1.2em;margin-top:6px}
+button.book{
+  display:flex;align-items:center;justify-content:center;gap:12px;
+  width:100%;font-family:Cinzel,Georgia,serif;font-weight:700;letter-spacing:.2em;font-size:.98rem;
+  padding:17px;border:0;border-radius:12px;cursor:pointer;color:#1a1409;
+  background:linear-gradient(135deg,var(--gold),var(--brass2) 55%,#b58d45);
+  box-shadow:0 16px 30px -14px rgba(201,166,97,.9),inset 0 1px 0 rgba(255,255,255,.5);
+  transition:transform .15s,filter .2s
+}
+button.book svg{width:20px;height:20px;fill:#1a1409}
+button.book:hover{filter:brightness(1.07)}
+button.book:active{transform:translateY(1px)}
+.hint{font-size:.85rem;color:#a89d86;margin-top:16px;text-align:center}
+
+/* ---------- Gallery ---------- */
+.gallery{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.gallery figure{position:relative;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:#111;box-shadow:0 14px 30px -22px rgba(120,90,30,.55)}
+.gallery figure.wide{grid-column:1 / -1}
+.gallery img{width:100%;height:100%;object-fit:cover;aspect-ratio:3/4}
+.gallery figure.wide img{aspect-ratio:4/3}
+.gallery figcaption{
+  position:absolute;left:0;right:0;bottom:0;padding:26px 12px 10px;
+  background:linear-gradient(180deg,transparent,rgba(0,0,0,.72));
+  color:#f3e3bd;font-family:"Cormorant Garamond",Georgia,serif;font-weight:700;font-size:1.1rem;letter-spacing:.04em
+}
+
+/* ---------- Services & Rates ---------- */
+.svc-card{margin-bottom:18px}
+.svc-title{font-family:Cinzel,Georgia,serif;font-weight:700;font-size:1rem;letter-spacing:.2em;text-transform:uppercase;color:var(--brass);text-align:center;padding-bottom:6px;border-bottom:1px solid var(--line)}
+.grp{
+  display:inline-block;margin:18px 0 4px;padding:5px 12px;border-radius:4px;
+  background:var(--ink);color:var(--gold);
+  font-family:Cinzel,Georgia,serif;font-weight:600;font-size:.74rem;letter-spacing:.16em;text-transform:uppercase
+}
+.rates{list-style:none;padding:0}
+.rates li{display:flex;align-items:baseline;gap:10px;padding:6px 0}
+.rates .n{font-family:"Cormorant Garamond",Georgia,serif;font-weight:700;font-size:1.15rem;line-height:1.3}
+.rates .d{flex:1;min-width:10px;border-bottom:1px dotted #b9ab8c;transform:translateY(-4px)}
+.rates .p{font-family:"Cormorant Garamond",Georgia,serif;font-weight:700;font-size:1.15rem;color:var(--brass);white-space:nowrap}
+
+/* Both service cards: BLACK theme */
+.svc-card.boys,.svc-card.girls{
+  background:linear-gradient(160deg,#1d1914,#0b0a08);
+  border:1px solid rgba(201,166,97,.55);
+  box-shadow:0 24px 50px -26px rgba(0,0,0,.85);
+}
+.svc-card.boys .svc-title,.svc-card.girls .svc-title{color:var(--brass2);border-bottom-color:rgba(201,166,97,.35)}
+.svc-card.boys .grp,.svc-card.girls .grp{background:linear-gradient(135deg,var(--gold),var(--brass2));color:#1a1409}
+.svc-card.boys .rates .n,.svc-card.girls .rates .n{color:#f3ead7}
+.svc-card.boys .rates .d,.svc-card.girls .rates .d{border-bottom-color:rgba(201,166,97,.4)}
+.svc-card.boys .rates .p,.svc-card.girls .rates .p{color:var(--gold)}
+.svc-card.notitle .grp:first-child{margin-top:0}
+
+/* ---------- Info ---------- */
+.info p{margin-bottom:8px}
+.info b{font-family:Cinzel,Georgia,serif;font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;font-weight:600;color:var(--brass)}
+.links{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.links a{padding:10px 18px;border:1px solid var(--ink);border-radius:999px;color:var(--ink);text-decoration:none;font-weight:500;transition:.2s}
+.links a:hover{background:var(--ink);color:var(--gold)}
+.links a.wa{background:var(--wa);border-color:var(--wa);color:#fff}
+
+footer{text-align:center;color:var(--brass);font-family:Cinzel,Georgia,serif;letter-spacing:.2em;font-size:.75rem;padding:34px 20px 40px}
+</style>
+</head>
+<body>
+
+<header>
+  <img class="logo" src="IMG-20261125-WA0002.jpg" alt="Hair Craft Salon logo">
+  <div class="brand">HAIR CRAFT<small>SALON</small></div>
+  <div class="tag">Precision · Passion · Perfection</div>
+  <div class="meta">Golaghat · Open daily, 9:30 AM to 9:30 PM</div>
+  <a class="cta" href="#book">BOOK YOUR TURN</a>
+</header>
+
+<main class="wrap">
+  <section id="book">
+    <h2>Book Your Turn</h2>
+    <form class="card" id="f" novalidate>
+      <div class="f-eyebrow">HAIR CRAFT SALON</div>
+      <div class="f-title">Reserve Your Seat</div>
+      <div class="f-sub">Fill in your details and we will get you in line.</div>
+      <div class="f-orn" aria-hidden="true">✦</div>
+
+      <div class="field">
+        <label for="name">Full Name</label>
+        <div class="inp">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg>
+          <input type="text" id="name" autocomplete="name" placeholder="Your name">
+        </div>
+        <div class="err" id="e-name"></div>
+      </div>
+
+      <div class="field">
+        <label for="phone">Mobile Number</label>
+        <div class="inp">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>
+          <span class="cc">+91</span>
+          <input type="tel" id="phone" inputmode="numeric" maxlength="10" placeholder="10-digit number">
+        </div>
+        <div class="err" id="e-phone"></div>
+      </div>
+
+      <!-- Preferred Time: tick a slot + slide AM/PM -->
+      <fieldset class="field">
+        <legend>Preferred Time</legend>
+        <div class="tslot">
+          <div class="chips" id="chips"></div>
+          <div class="ampm-wrap">
+            <button type="button" class="ampm" id="ampm" role="switch" aria-checked="false" aria-label="AM or PM">
+              <span class="lbl l-am">AM</span>
+              <span class="lbl l-pm">PM</span>
+              <span class="knob" id="knob">AM</span>
+            </button>
+            <small>SLIDE</small>
+          </div>
+        </div>
+        <div class="t-note">Select a time, open daily 9:30 AM to 9:30 PM.</div>
+        <div class="err" id="e-time"></div>
+      </fieldset>
+
+      <fieldset class="field">
+        <legend>Select</legend>
+        <div class="g">
+          <label><input type="radio" name="gender" value="Men"><span>Men</span></label>
+          <label><input type="radio" name="gender" value="Women"><span>Women</span></label>
+          <label><input type="radio" name="gender" value="Kid"><span>Kids</span></label>
+        </div>
+        <div class="err" id="e-gender"></div>
+      </fieldset>
+
+      <button type="submit" class="book">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 3.5A11 11 0 0 0 3.2 17.2L2 22l4.9-1.3A11 11 0 1 0 20.5 3.5zM12 20a9 9 0 0 1-4.6-1.3l-.3-.2-2.9.8.8-2.8-.2-.3A9 9 0 1 1 12 20zm5-6.7c-.3-.1-1.6-.8-1.9-.9s-.4-.1-.6.1-.7.9-.9 1.1-.3.2-.6.1a7.400 7.400 0 0 1-3.700-3.200c-.3-.5.3-.5.8-1.500.1-.2 0-.3 0-.5s-.6-1.500-.9-2c-.2-.5-.5-.5-.6-.5h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.200 5.200 5.200 0 0 0 1.100 2.800 11.900 11.900 0 0 0 4.600 4.100c1.700.7 2.400.8 3.300.7a2.800 2.800 0 0 0 1.800-1.300 2.200 2.200 0 0 0 .2-1.300c-.1-.1-.2-.2-.5-.3z"/></svg>
+        BOOK MY NUMBER
+      </button>
+      <p class="hint">WhatsApp will open with your message already written. Just press Send.</p>
+    </form>
+  </section>
+
+  <section id="rates">
+    <h2>Services &amp; Rates</h2>
+    <div id="svc"></div>
+  </section>
+
+  <section id="gallery">
+    <h2>Our Salon</h2>
+    <div class="gallery">
+      <figure class="wide">
+        <img src="IMG-20261124-WA0017.jpg" alt="Hair Craft Salon signboard at night" loading="lazy">
+        <figcaption>Night Glow</figcaption>
+      </figure>
+      <figure>
+        <img src="IMG-20261124-WA0021.jpg" alt="Inside Hair Craft Salon" loading="lazy">
+        <figcaption>Inside View</figcaption>
+      </figure>
+      <figure>
+        <img src="IMG-20261124-WA0020.jpg" alt="Hair Craft Salon 1st Anniversary cake" loading="lazy">
+        <figcaption>1st Anniversary</figcaption>
+      </figure>
+      <figure>
+        <img src="IMG-20261124-WA0037.jpg" alt="Hair Craft Salon entrance" loading="lazy">
+        <figcaption>Our Entrance</figcaption>
+      </figure>
+      <figure>
+        <img src="IMG-20261124-WA0012.jpg" alt="Hair Craft Salon lighting and interior" loading="lazy">
+        <figcaption>Stunning Interior</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="info">
+    <h2>Visit Us</h2>
+    <div class="card">
+      <p><b>Address</b>&nbsp; GDSA Market, opposite the Post Office, Golaghat</p>
+      <p><b>Hours</b>&nbsp; Open all 7 days, 9:30 AM to 9:30 PM</p>
+      <div class="links">
+        <a class="wa" id="wa-link" href="#" target="_blank" rel="noopener">Chat on WhatsApp</a>
+        <a href="https://www.google.com/maps/search/?api=1&query=Hair+Craft+Salon+GDSA+Market+Golaghat" target="_blank" rel="noopener">View on Map</a>
+        <a href="https://www.instagram.com/hair_craft_salon_golaghat/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+  </section>
+</main>
+<footer>HAIR CRAFT SALON · GOLAGHAT</footer>
+
+<script>
+// ===== EDIT HERE =====
+var SHOP_WA = "917002641139";   // with country code 91, no + (not shown on screen)
+var SHOP_NAME = "Hair Craft Salon";
+
+// Time slots (AM list and PM list). Edit here to add or remove a slot.
+var SLOTS_AM = ["9:30","10:00","10:30","11:00","11:30"];
+var SLOTS_PM = ["12:00","12:30","1:00","1:30","2:00","2:30","3:00","3:30","4:00","4:30","5:00","5:30","6:00","6:30","7:00","7:30","8:00","8:30","9:00","9:30"];
+
+// Services: change a price by editing the text, e.g. ["Men's Hair Cut","₹200"]
+// title: "" = no heading on that card
+var SERVICES = [
+  {
+    title: "Hair Services",
+    theme: "boys",
+    groups: [
+      {name: "Hair Cut", items: [
+        ["Kids Hair Cut","₹150"],
+        ["Men's Hair Cut","₹200"],
+        ["Men's Shaving","₹100"],
+        ["Men's Beard Trimming / Setting","₹150"],
+        ["Haircut + Beard","₹250"],
+        ["Hair Wash & Hair Setting","₹150"]
+      ]},
+      {name: "Hair Colour", items: [
+        ["Matrix","₹600"],
+        ["L'Oreal","₹600"],
+        ["Raaga","₹500"],
+        ["Gel","₹500"],
+        ["Funky Colour","₹1500"],
+        ["Highlight Colour","₹1800"]
+      ]},
+      {name: "Massage", items: [
+        ["Oil Head Massage","₹200"],
+        ["Half Body Massage","₹300"]
+      ]},
+      {name: "Hair Spa", items: [
+        ["Normal Hair Spa","₹600"],
+        ["Power Hair Spa","₹800"],
+        ["Keratin Spa","₹900"],
+        ["Anti-Dandruff Spa","₹1000"],
+        ["Anti-Hairfall Spa","₹1000"]
+      ]},
+      {name: "Hair Straightening & Smoothing", items: [
+        ["Hair Straightening","₹2800"],
+        ["Hair Smoothing","₹3200"]
+      ]}
+    ]
+  },
+  {
+    title: "",
+    theme: "girls",
+    groups: [
+      {name: "Face Wash", items: [
+        ["Lotus","₹250"],
+        ["Jove (S)","₹150"],
+        ["Nivea","₹150"]
+      ]},
+      {name: "Face Scrub", items: [
+        ["Lotus","₹350"],
+        ["Raaga","₹300"],
+        ["Fruit","₹250"]
+      ]},
+      {name: "De-Tan", items: [
+        ["Raaga Face De-tan","₹350"],
+        ["Raaga Neck De-tan","₹300"],
+        ["O3+ Face De-tan","₹400"],
+        ["O3+ Neck De-tan","₹350"]
+      ]},
+      {name: "Clean Up", items: [
+        ["Basic Clean Up","₹500"],
+        ["Premium Clean Up","₹800"]
+      ]},
+      {name: "Facial", items: [
+        ["Fruit Facial","₹1200"]
+      ]},
+      {name: "Skin Care Facial", items: [
+        ["Oil Skin Care Facial","₹1600"],
+        ["Dry Skin Hydrating Facial","₹1600"],
+        ["Sensitive Skin Soothing Facial","₹1600"]
+      ]},
+      {name: "Glow & Brightening", items: [
+        ["Brightening Facial","₹2700"],
+        ["Vitamin C Glow Facial","₹2700"],
+        ["De-Tan Facial","₹2700"]
+      ]},
+      {name: "Premium Facial", items: [
+        ["Gold Facial","₹3000"],
+        ["Diamond Facial","₹3000"],
+        ["Pearl Brightening Facial","₹3000"]
+      ]},
+      {name: "Piercing", items: [
+        ["Normal Piercing","₹150"],
+        ["Stud","Price Extra"]
+      ]}
+    ]
+  }
+];
+// =====================
+
+(function(){
+  // WhatsApp button (number is only inside the link, not on the page)
+  document.getElementById("wa-link").href =
+    "https://wa.me/" + SHOP_WA + "?text=" + encodeURIComponent("Hello " + SHOP_NAME + ", I need some information.");
+
+  // Build services list
+  var box = document.getElementById("svc");
+  SERVICES.forEach(function(cat){
+    var card = document.createElement("div");
+    card.className = "card svc-card " + (cat.theme || "") + (cat.title ? "" : " notitle");
+    if (cat.title) {
+      var t = document.createElement("div");
+      t.className = "svc-title"; t.textContent = cat.title;
+      card.appendChild(t);
+    }
+    cat.groups.forEach(function(g){
+      var h = document.createElement("div");
+      h.className = "grp"; h.textContent = g.name;
+      card.appendChild(h);
+      var ul = document.createElement("ul");
+      ul.className = "rates";
+      g.items.forEach(function(it){
+        var li = document.createElement("li"),
+            n = document.createElement("span"),
+            d = document.createElement("span"),
+            p = document.createElement("span");
+        n.className = "n"; n.textContent = it[0];
+        d.className = "d";
+        p.className = "p"; p.textContent = it[1];
+        li.appendChild(n); li.appendChild(d); li.appendChild(p);
+        ul.appendChild(li);
+      });
+      card.appendChild(ul);
+    });
+    box.appendChild(card);
+  });
+
+  // ----- Time slots + AM/PM slider -----
+  var chips = document.getElementById("chips");
+  var sw = document.getElementById("ampm");
+  var knob = document.getElementById("knob");
+  var isPM = false;   // starts at AM
+
+  function renderChips(){
+    chips.innerHTML = "";
+    var list = isPM ? SLOTS_PM : SLOTS_AM;
+    list.forEach(function(t){
+      var lab = document.createElement("label");
+      var inp = document.createElement("input");
+      inp.type = "radio"; inp.name = "slot"; inp.value = t;
+      var sp = document.createElement("span");
+      sp.textContent = t;
+      lab.appendChild(inp); lab.appendChild(sp);
+      chips.appendChild(lab);
+    });
+  }
+  function setPM(v){
+    isPM = v;
+    sw.setAttribute("aria-checked", v ? "true" : "false");
+    knob.textContent = v ? "PM" : "AM";
+    renderChips();
+    document.getElementById("e-time").textContent = "";
+  }
+  // tap = switch, swipe up = AM, swipe down = PM
+  var startY = null, moved = false;
+  sw.addEventListener("pointerdown", function(e){ startY = e.clientY; moved = false; });
+  sw.addEventListener("pointerup", function(e){
+    if (startY === null) return;
+    var dy = e.clientY - startY;
+    if (Math.abs(dy) > 12) { setPM(dy > 0); moved = true; }
+    startY = null;
+  });
+  sw.addEventListener("pointercancel", function(){ startY = null; });
+  sw.addEventListener("click", function(){
+    if (moved) { moved = false; return; }
+    setPM(!isPM);
+  });
+  sw.addEventListener("keydown", function(e){
+    if (e.key === "ArrowUp") { e.preventDefault(); setPM(false); }
+    if (e.key === "ArrowDown") { e.preventDefault(); setPM(true); }
+  });
+  renderChips();
+
+  // Booking form
+  var f = document.getElementById("f");
+  function setErr(id, msg){ document.getElementById("e-" + id).textContent = msg; }
+  f.addEventListener("submit", function(ev){
+    ev.preventDefault();
+    var name = document.getElementById("name").value.trim();
+    var phone = document.getElementById("phone").value.replace(/\D/g, "");
+    var slot = f.querySelector('input[name="slot"]:checked');
+    var g = f.querySelector('input[name="gender"]:checked');
+    var ok = true;
+    setErr("name", ""); setErr("phone", ""); setErr("time", ""); setErr("gender", "");
+    if (name.length < 2) { setErr("name", "Please enter your name."); ok = false; }
+    if (!/^[6-9]\d{9}$/.test(phone)) { setErr("phone", "Enter a valid 10-digit mobile number."); ok = false; }
+    if (!slot) { setErr("time", "Please select a time."); ok = false; }
+    if (!g) { setErr("gender", "Please select one option."); ok = false; }
+    if (!ok) return;
+    var timeText = slot.value + " " + (isPM ? "PM" : "AM");
+    var msg = "Hello " + SHOP_NAME + ",\nMy name: " + name + "\nMobile: " + phone + "\nTime: " + timeText + "\nCategory: " + g.value + "\nPlease add my turn in the line.";
+    window.location.href = "https://wa.me/" + SHOP_WA + "?text=" + encodeURIComponent(msg);
+  });
+})();
+</script>
+</body>
+</html>
